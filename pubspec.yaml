@@ -1,0 +1,32 @@
+name: qr_code_scanner_plus
+description: QR code scanner that can be embedded inside flutter. It uses zxing in Android and MTBBarcode scanner in iOS.
+version: 2.0.6
+homepage: https://vespr.xyz
+repository: https://github.com/vespr-wallet/qr_code_scanner_plus
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+  flutter: ">=3.3.0"
+
+dependencies:
+  # js: ^0.6.3
+  web: ^1.0.0
+  flutter:
+    sdk: flutter
+  flutter_web_plugins:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_lints: ^4.0.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: net.touchcapture.qr.flutterqrplus
+        pluginClass: FlutterQrPlusPlugin
+      ios:
+        pluginClass: FlutterQrPlusPlugin
+#      web:
+#        pluginClass: FlutterQrPlusPlugin
+#        fileName: flutter_qr_web.dart
