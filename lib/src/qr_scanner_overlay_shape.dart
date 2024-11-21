@@ -110,6 +110,10 @@ class QrScannerOverlayShape extends ShapeBorder {
     );
 
     canvas
+      ..saveLayer(
+          rect,
+          Paint(),
+      )
       ..drawRect(
         rect,
         backgroundPaint,
