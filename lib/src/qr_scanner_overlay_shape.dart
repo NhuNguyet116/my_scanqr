@@ -96,7 +96,7 @@ class QrScannerOverlayShape extends ShapeBorder {
     final boxPaint = Paint()
       ..color = borderColor
       ..style = PaintingStyle.fill
-      ..blendMode = BlendMode.clear;
+      ..blendMode = BlendMode.dstOut;
 
     final cutOutRect = Rect.fromLTWH(
       rect.left + width / 2 - _cutOutWidth / 2 + borderOffset,
